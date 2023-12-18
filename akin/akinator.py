@@ -16,7 +16,7 @@ class Akinator:
         self.screen = pygame.display.set_mode((800, 600))
         pygame.display.set_caption("Akinator Game")
         self.font = pygame.font.Font(None, 36)
-        self.background = pygame.image.load("background.jpg").convert()
+        self.background = pygame.image.load("akin/background.jpg").convert()
 
     def build_decision_tree(self):
         X = self.dataset.drop(columns=['champion'])
@@ -114,7 +114,7 @@ class Akinator:
 
         self.display_result(most_likely_champion, posterior_probability)
 
-        path = "C:\\Users\\Win10\\Desktop\\champions\\" + most_likely_champion.lower().replace(" ", "").replace(".", "") + '.jpg'
+        path = "champions\\" + most_likely_champion.lower().replace(" ", "").replace(".", "") + '.jpg'
         img = Image.open(path)
 
         max_width, max_height = 700, 300
@@ -184,7 +184,7 @@ class Akinator:
             self.play(node_index)
         
 
-dataset = pd.read_csv('League of Legends.csv')
+dataset = pd.read_csv('akin\League of Legends.csv')
 
 akinator = Akinator(dataset)
 akinator.play()
