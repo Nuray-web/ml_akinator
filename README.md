@@ -1,5 +1,9 @@
 # Akinator project (with implementation of Decision Tree and idea of Bayes Entropy)
 
+On base of __League of Legends__ characters!
+
+![](https://cdn1.epicgames.com/offer/24b9b5e323bc40eea252a10cdd3b2f10/EGS_LeagueofLegends_RiotGames_S1_2560x1440-872a966297484acd0efe49f34edd5aed)
+
 Overview of the concept:
 - It will be like classical Akinator ‘guess’ game with characters of League of Legends. 
 - There will be answers like yes/no/idk (I don’t know) to value the probabilities and more smoothly handle the inaccuracies.
@@ -14,5 +18,6 @@ How it will work?
 
 - For Decision Tree: Algorithm simply will determine the possible splits that each feature gives, calculate the information gain — pick the common one. Game process will look like descending hierarchy from the node to leaf, but the mistakes or inaccuracies in algorithm might cause some troubles in balancing the tree. 
 
-Game itself:
+# Game itself:
 
+![](https://github.com/Nuray-web/ml_akinator/blob/main/akin/gamepreview.gif)
